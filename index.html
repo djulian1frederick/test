@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автозвук 56</title> 
+    <script src="/js/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/libs/sweetalert/sweeralert2.min.css">
+    <link rel="stylesheet" href="/libs/bootstrap-5.3.2/css/bootstrap.css">
+    <link rel="stylesheet" href="/libs/bootstrap-5.3.2/css/bootstrap-utilities.min.css">
+    <script src="/libs/bootstrap-5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="/libs/bootstrap-5.3.2/js/bootstrap.min.js"></script>
+    <script src="/js/include.js"></script>
+    <script type="importmap">
+    {
+      "imports": {
+        "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/esm/popper.min.js"
+      }
+    }
+    </script>
+    <script type="module" src="/libs/bootstrap-5.3.2/js/bootstrap.esm.js"></script>
+    <script src="/libs/sweetalert/sweeralert2.min.js"></script>
+    <script>
+      function height_slider(){
+        let height_nav =$('.navbar').innerHeight() + 'px';
+        $('.mainSlide').attr('style', 'height: calc(100vh - '+ height_nav +')');
+        $('.elemFig').hover(function(){
+            $(this).children('.headElem').css('visibility', 'unset').fadeIn(5000);
+        }); 
+        $(function() {
+          $(window).scroll(function() {
+            if($(this).scrollTop() != 0) {
+              $('#toTop').fadeIn();
+              $('#toTop').css('display', 'grid');
+              $('#toTop').css('align-content', 'end');
+            } else {
+              $('#toTop').fadeOut();
+              $('#toTop').css('align-content', 'unset');
+            }
+          });
+          $('#toTop').click(function() {
+            $('body,html').animate({scrollTop:0},800);
+          });
+        });
+      }
+      function changeIframe(){
+        $('iframe').hide();
+        let iframe = $('iframe');
+        $('.frame').append(iframe);
+        $('.frame').children('iframe').show();
+      }
+    </script>
+
+</head>
+<body onload="height_slider(); changeIframe();">
+  <div id="header-html"></div>
+  <div id="main-html"></div>
+  <div class="container-fluid footer">
+    <div class="col-md-12">
+        <span class="n-footer">2024г. Автозвук56</span>
+        <div class="additionalUse">
+            <p>Значки<a href="https://www.flaticon.com/uicons">Flaticon</a></p>
+            <p>Disket Mono шрифт Mariano Diez.</p>
+            <p> Copyright (c) 2019 by Mariano Diez. All rights reserved.</p>
+            <p>Dev. Barabanov A.D.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<div class="container-fluid" id="aboutUs">
+    <h2 class="headers-centered">Последние новости</h2>
+    <div class="col-md-10 gallery-block">
+    <div id="galleryInfo" class="carousel carousel-dark slide"  data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#galleryInfo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#galleryInfo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#galleryInfo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+            
+            <img src="/img/Поставка.jpg" class="d-block img-fluid" onclick="sweetAlert.fire(`<center><p class='fullInfo'>Новая поставка</p></center><br><span class='fullInfoDesc'>Большое поступление продукции Deaf Bonce, Avatar, Black Hydra🔥🔥🔥</span>`);" >
+              <div class="carousel-caption d-none d-md-block text-bg-light">
+                  <h5>Новая поставка</h5>
+                  <p class="descr">Большое поступление продукции Deaf Bonce, Avatar, Black Hydra🔥🔥🔥</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+            <img src="/img/конкурс.jpg" class="d-block img-fluid" alt="<?=$row[1]['new_name'];?>" onclick="sweetAlert.fire(`<center><p class='fullInfo'>Открытие Чемпионата России по автозвуку и тюнингу АМТ 2024 🔥🔥🔥</p></center><br><span class='fullInfoDesc'>💥Дорогие друзья и клиенты магазина автозвука❗<br>Уже завтра,23.05 состоится Открытие Чемпионата России по автозвуку и тюнингу АМТ 2024 🔥🔥🔥<br>            В связи с этим, магазин 23.05 не работает❗<br>  С 25.05 магазин работает в штатном режиме😎<br>Всех ждем завтра на площадке Мегамолл МАРМЕЛАД💥<br> Начало мероприятия в 12:00❗</span>`);">
+              <div class="carousel-caption d-none d-md-block text-bg-light">
+                  <h5>Открытие Чемпионата России по автозвуку и тюнингу АМТ 2024 🔥🔥🔥</h5>
+                  <p class="descr">💥Дорогие друзья и клиенты магазина автозвука❗<br>
+                    Уже завтра,23.05 состоится Открытие Чемпионата России по автозвуку и тюнингу АМТ 2024 🔥🔥🔥<br>
+                    В связи с этим, магазин 23.05 не работает❗<br>
+                    С 25.05 магазин работает в штатном режиме😎<br>
+                    Всех ждем завтра на площадке Мегамолл МАРМЕЛАД💥<br>
+                    Начало мероприятия в 12:00❗</p>
+              </div>
+            </div>
+            <div class="carousel-item"  data-bs-interval="5000">
+            <img src="/img/поступление.jpg" class="d-block img-fluid" alt="<?=$row[2]['new_name'];?>" onclick="sweetAlert.fire(`<center><p class='fullInfo'>🔥Поступление продукции Edge Car Audio🔥</p></center><br><span class='fullInfoDesc'>🏡 Оренбург, ул. Одесская, 87<br> 🕰 Пн - Пт️ 10.00 - 20.00, Сб - Вс 10.00 - 19.00</span>`);">
+              <div class="carousel-caption d-none d-md-block text-bg-light">
+                  <h5>🔥Поступление продукции Edge Car Audio🔥</h5>
+                  <p class="descr">🏡 Оренбург, ул. Одесская, 87<br> 🕰 Пн - Пт️ 10.00 - 20.00, Сб - Вс 10.00 - 19.00</p>
+              </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#galleryInfo" data-bs-slide="prev"  data-bs-target="galleryInfo">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#galleryInfo" data-bs-slide="next"  data-bs-target="galleryInfo">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+        </button>
+        </div>
+    </div>
+</div>
